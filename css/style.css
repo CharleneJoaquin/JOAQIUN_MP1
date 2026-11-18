@@ -3,13 +3,59 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     color: #000000;
-    padding: 10px;
 }
 
 a {
     color: #000000;
     text-decoration: none;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.page a{
+    padding: 10px 60px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+footer {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.headerLogo img {
+    height: 80px;
+}
+
+.headerBar {
+    display: flex;
+    height: 6px;
+}
+
+#headerBarRed {
+    background-color: #ba2226;
+    flex: 1;
+}
+
+#headerBarBlue {
+    background-color: #0071bc;
+    flex: 1;
+}
+
+#headerBarGreen {
+    background-color: #49896f;
+    flex: 1;
+}
+
+#headerBarYellow {
+    background-color: #dc9627;
+    flex: 1;
 }
