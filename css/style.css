@@ -1,40 +1,48 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Arial, sans-serif;
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
     background-color: #ffffff;
-    color: #000000;
 }
 
 a {
     color: #000000;
     text-decoration: none;
-    font-family: Arial, sans-serif;
+}
+
+/*----------------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+header nav {
+    align-self: flex-end;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 60px;
     font-size: large;
     font-weight: bold;
+    color: #6b6b6b;
 }
 
-.page a{
-    padding: 10px 60px;
+/*adds black line when html file is active*/
+header nav a.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-}
-
-footer {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
-
-.headerLogo img {
+header .headerLogo img {
     height: 80px;
+    padding: 10px 0px;
 }
 
+/*adds decorative colored line at the top*/
 .headerBar {
     display: flex;
     height: 6px;
@@ -58,4 +66,71 @@ footer {
 #headerBarYellow {
     background-color: #dc9627;
     flex: 1;
+}
+
+/*----------------------------*/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 30px 40px;
+    font-size: 15px;
+    background-color: #f5f5f5;
+    color: #505050;
+    border-top: 2px solid #dfdfdf;
+}
+
+
+/*----------------------------*/
+
+.footerPages {
+    grid-column: 4;
+}
+
+.footerContact {
+    grid-column: 5;
+}
+
+.footerPages a, .footerContact a {
+    color: #505050;
+}
+
+.footerContact h4 a {
+    color: #000000;
+}
+
+.footerLogo, .footerAbout {
+    grid-column: 1/ span 2;
+}
+
+.footerAbout {
+    padding-top: 10px;
+}
+
+.footerLogo img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.footerPages h4, .footerContact h4 {
+    color:#000000;
+    margin-top: 0px 0px 10px 0px;
+}
+
+.footerPages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerPages li {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    grid-column: 1/-1;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
 }
