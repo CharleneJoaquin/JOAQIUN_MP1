@@ -1,0 +1,31 @@
+#homeMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 60px 40px;
+}
+
+.homeText {
+    flex: 0 1 360px; /*for scalability*/
+}
+
+.aboutUs {
+    line-height: 1.6;
+}
+
+#tagline {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+#awardVideo {
+    flex: 0 1 720px; /*for scalability*/
+}
+
+#awardVideo video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
