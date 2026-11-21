@@ -1,0 +1,107 @@
+#productsMain {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px 60px 100px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+}
+
+.productText {
+    text-align: left;
+    padding: 30px 0px 40px;
+    margin: 30px 300px 0px;
+}
+
+.productText h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+.productText p {
+    max-width: none;
+    margin: 0px;
+    color: #505050;
+}
+
+.product .seeMore {
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 12px;
+    color: #0060af;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 50px;
+    padding: 40px 50px;
+    margin: 30px 300px 0px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 10px 30px #00000014;
+
+    /*colored lines on left and right*/
+    border-left: 14px solid #ba2226;
+    border-right: 14px solid #ba2226;
+    border-radius: 12px;
+}
+
+.product img {
+    flex: 0 0 200px;
+    width: 200px;
+    aspect-ratio: 4 / 4;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px #00000014;
+}
+
+.productInfo {
+    flex: 1;
+}
+
+.product h3 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0px 0px 12px 0px;
+    font-size: 26px;
+    color: #000000;
+}
+
+/*decorative box before product name*/
+.product h3::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: #ba2226;
+    flex-shrink: 0;
+}
+
+.product p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    color: #505050;
+}
+
+/*to alternate color betwen product listings*/
+/*better for scalability, when more products are added*/
+.product:nth-of-type(4n+1) h3::before { background-color: #ba2226; }
+.product:nth-of-type(4n+1) { border-left-color: #ba2226; }
+.product:nth-of-type(4n+1) { border-right-color: #ba2226; }
+
+.product:nth-of-type(4n+2) h3::before { background-color: #0071bc; }
+.product:nth-of-type(4n+2) { border-left-color: #0071bc; }
+.product:nth-of-type(4n+2) { border-right-color: #0071bc; }
+
+.product:nth-of-type(4n+3) h3::before { background-color: #49896f; }
+.product:nth-of-type(4n+3) { border-left-color: #49896f; }
+.product:nth-of-type(4n+3) { border-right-color: #49896f; }
+
+.product:nth-of-type(4n)   h3::before { background-color: #dc9627; }
+.product:nth-of-type(4n) { border-left-color: #dc9627; }
+.product:nth-of-type(4n) { border-right-color: #dc9627; }
