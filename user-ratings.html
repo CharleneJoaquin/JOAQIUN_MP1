@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <title>Login Page</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/user-ratings.css">
     </head>
     
     <body>
@@ -30,8 +31,54 @@
 <!--START OF MAIN-->
 
         <main>
-            <section>
+            <section id="ratingsMain">
+                <div class="ratingsText">
+                    <h2 id="headine">What our customers say</h2>
+                    <p>Let us know how we are doing!</p>
+                </div>
 
+                <div class="reviewBox">
+
+                    <!--posting a review-->
+                    <form id="reviewForm">
+                        <h3>Leave us a review</h3>
+                        <div class="formLabel">Rating</div>
+
+                        <fieldset class="starRating">
+                            <input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
+                            <input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
+                            <input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
+                            <input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
+                            <input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
+                        </fieldset>
+
+                        <div class="formInput">
+                            <label for="reviewName">Your Name (optional)</label>
+                            <input type="text" id="reviewName" placeholder="Full name">
+                        </div>
+
+                        <div class="formInput">
+                            <label for="reviewComment">Comment</label>
+                            <textarea id="reviewComment" placeholder="Write your comment here" required></textarea>
+                        </div>
+
+                        <div id="errorMessage">Please fully complete before posting.</div>
+
+                        <button type="reset" id="resetButton">Clear</button>
+                        <button type="submit" id="submitButton">Post</button>
+                    </form>
+
+                    <!--visual summary of all reviewss-->
+                    <div class="ratingSummary">
+                        <div id="averageScore">0.0</div>
+                        <div id="averageStars" style="--rating: 0">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p id="averageCount">No reviews yet</p>
+                    </div>
+
+                </div>
+
+                <!--all posted reviews-->
+                <div class="reviewPost"></div>
             </section>
         </main>
 
@@ -42,7 +89,7 @@
                 <a href="index.html" class="headerLogo">
                     <img src="photos/logoFullVer1.png" alt="Chromatix Digital Graphics Design and Printing">
                 </a>
-                <p class="footerAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="footerAbout">A shop based in Olongapo City, for all your printing needs! We offer many services perfect for events and everything your business requires.</p>
             </div>
 
             <div class="footerPages">
@@ -58,8 +105,8 @@
 
             <div class="footerContact">
                 <h4><a href="contact-us.html">CONTACT US</a></h4>
-                <p><a href="contact-us.html">+(63) 925 858 5622</a></p>
-                <p><a href="contact-us.html">chromatix08@gmail.com</a> </p>
+                <p><a href="tel:+639258585622">+(63) 925 858 5622</a></p>
+                <p><a href="mailto:chromatix08@gmail.com">chromatix08@gmail.com</a> </p>
                 <p><a href="https://www.facebook.com/ChromatixDigitalGraphic">facebook.com/ChromatixDigitalGraphic</a></p>
                 <p><a href="https://maps.app.goo.gl/qVREdaC6y2ZSpnni7">Lot 7 Block 6, Duhat St. Gordon Heights, Olongapo City, Zambales</a></p>
             </div>
@@ -70,4 +117,5 @@
 
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="js/user-ratings.js"></script>
 </html>

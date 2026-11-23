@@ -1,23 +1,24 @@
 #homeMain {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 100px;
-    padding: 60px 40px;
+    padding: 60px var(--side) 60px var(--side);
 }
 
 .homeText {
     flex: 0 1 360px;
 }
 
-.aboutUs {
+.homeText .aboutUs {
     margin: 0;
+    font-size: 16px;
     line-height: 1.7;
+    color: #505050;
 }
 
-#tagline {
-    margin: 0px 0px 10px 0px;
-    line-height: 1.2;
+.homeText .aboutUs + .aboutUs {
+    margin-top: 12px;
 }
 
 #awardVideo {
@@ -25,8 +26,63 @@
 }
 
 #awardVideo video {
-    width: 100%;
     display: block;
+    width: 100%;
     border-radius: 12px;
-    box-shadow: 0px 10px 30px 0px  #00000014;
+    box-shadow: 0px 10px 30px 0px #00000014;
+}
+
+/*----------------------------*/
+
+#homeProducts {
+    padding: 20px var(--side) 0px var(--side);
+}
+
+/*headline*/
+#homeProducts h2 {
+    font-size: 40px;
+}
+
+.homeProductList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin: 40px 0px 40px 0px;
+}
+
+.homeProduct {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px 0px #00000014;
+}
+
+.homeProduct img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.homeProduct span {
+    display: block;
+    padding: 15px 18px 15px 18px;
+    font-weight: 600;
+}
+
+.homeButton {
+    display: block;
+    width: fit-content;
+    padding: 0.8rem 1.75rem 0.8rem 1.75rem;
+    margin-left: auto;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #0071bc;
+    border: 2px solid #0071bc;
+    border-radius: 6px;
+}
+
+.homeButton:hover {
+    color: #0071bc;
+    background-color: #ffffff;
 }

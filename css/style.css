@@ -9,6 +9,18 @@ a {
     text-decoration: none;
 }
 
+:root {
+    /*side space changes as horizontal size changes*/
+    --side: max(300px, calc(100% - 1200px) / 2);
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
 /*----------------------------*/
 
 header {
@@ -36,6 +48,15 @@ h2::before {
 
 h2 {
     font-size: 60px;
+    line-height: 1.2;
+    margin: 0px 0px 10px 0px;
+}
+
+h2 + p {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #505050;
 }
 
 header nav {
@@ -70,13 +91,11 @@ header .headerLogo {
 header #logoTextHeader {
     height: 40px;
     padding: 5px 0px 5px 15px;
-    display: block;
 }
 
 header #logoHeader {
     height: 60px;
     padding: 5px 0px 5px 35px;
-    display: block;
 }
 
 /*adds decorative colored line at the top*/
@@ -133,7 +152,7 @@ footer {
     color: #000000;
 }
 
-.footerLogo, .footerAbout {
+.footerLogo{
     grid-column: 1/ span 2;
 }
 

@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <title>Login Page</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/gallery.css">
     </head>
     
     <body>
@@ -30,8 +31,131 @@
 <!--START OF MAIN-->
 
         <main>
-            <section>
+            <section id="galleryMain">
+                <div class="galleryText">
+                    <h2 id="headline">Take a look</h2>
+                    <p class="aboutUs">pictures of all our past projects!</p>
+                </div>
 
+                <div class="galleryFilters">
+                        <button class="active" id="filterAll">All</button>
+                        <button id="filter-carWrapping">Car Wrapping</button>
+                        <button id="filter-callingCard">Calling Card</button>
+                        <button id="filter-deskplate">Deskplate</button>
+                        <button id="filter-nameplate">Nameplate</button>
+                        <button id="filter-plaque">Plaque</button>
+                        <button id="filter-printing">Printing</button>
+                        <button id="filter-binding">Binding</button>
+                        <button id="filter-pvcID">PVC ID</button>
+                        <button id="filter-stickerOnAcrylic">Sticker on Acrylic</button>
+                        <button id="filter-tShirt">T-Shirt</button>
+                </div>
+
+                <figure class="galleryItem" data-tag="carWrapping">
+                        <img src="photos/MainProducts/car wrapping.jpg" alt="Car Wrapping">
+                </figure>
+
+                <figure class="galleryItem" data-tag="callingCard">
+                        <img src="photos/MainProducts/calling card.png" alt="Calling Card">
+                </figure>
+
+                <figure class="galleryItem" data-tag="deskplate nameplate">
+                        <img src="photos/MainProducts/deskplate & nameplates.jpg" alt="Deskplate and Nameplates">
+                </figure>
+
+                <figure class="galleryItem" data-tag="plaque">
+                        <img src="photos/MainProducts/plaque.jpg" alt="Glass Plaque">
+                </figure>
+
+                <figure class="galleryItem" data-tag="printing binding">
+                        <img src="photos/MainProducts/printing & binding.jpg" alt="Printing and Binding">
+                </figure>
+
+                <figure class="galleryItem" data-tag="pvcID">
+                        <img src="photos/MainProducts/pvc ID.jpg" alt="pvc ID">
+                </figure>
+
+                <figure class="galleryItem" data-tag="stickerOnAcrylic">
+                        <img src="photos/MainProducts/sticker on acrylic.jpg" alt="Sticker on Acrylic">
+                </figure>
+
+                <figure class="galleryItem" data-tag="tShirt">
+                        <img src="photos/MainProducts/t-shirt printing.jpg" alt="T-shirt Printing">
+                </figure>
+
+
+                <figure class="galleryItem" data-tag="carWrapping">
+                        <img src="photos/products/car wrapping -1.jpg" alt="Car Wrapping">
+                </figure>
+
+                <figure class="galleryItem" data-tag="carWrapping">
+                        <img src="photos/products/car wrapping -2.jpg" alt="Car Wrapping">
+                </figure>
+
+
+                <figure class="galleryItem" data-tag="deskplates">
+                        <img src="photos/products/deskplates -1.gif" alt="Deskplates">
+                </figure>
+
+                <figure class="galleryItem" data-tag="deskplates">
+                        <img src="photos/products/deskplates -2.jpg" alt="Deskplates">
+                </figure>
+
+                <figure class="galleryItem" data-tag="deskplates nameplates stickerOnAcrylic">
+                        <img src="photos/products/deskplates nameplates sticker -1.jpg" alt="Deskplates, Nameplates, and Sticker on Acrylic">
+                </figure>
+
+                <figure class="galleryItem" data-tag="nameplates">
+                        <img src="photos/products/nameplates -1.png" alt="Nameplates">
+                </figure>
+
+
+                <figure class="galleryItem" data-tag="plaque">
+                        <img src="photos/products/plaques -1.jpg" alt="Plaques">
+                </figure>
+
+                <figure class="galleryItem" data-tag="plaque">
+                        <img src="photos/products/plaques -2.jpg" alt="Plaques">
+                </figure>
+
+                <figure class="galleryItem" data-tag="plaque">
+                        <img src="photos/products/plaques -3.jpg" alt="Plaques">
+                </figure>
+
+                <figure class="galleryItem" data-tag="plaque">
+                        <img src="photos/products/plaques -4.jpg" alt="Plaques">
+                </figure>
+
+
+                <figure class="galleryItem" data-tag="printing binding">
+                        <img src="photos/products/printing binding -1.jpg" alt="Printing and Binding">
+                </figure>
+
+                <figure class="galleryItem" data-tag="printing binding">
+                        <img src="photos/products/printing binding -2.jpg" alt="Printing and Binding">
+                </figure>
+
+                <figure class="galleryItem" data-tag="printing binding">
+                        <img src="photos/products/printing binding -3.jpg" alt="Printing and Binding">
+                </figure>
+
+                <figure class="galleryItem" data-tag="printing binding">
+                        <img src="photos/products/printing binding -4.jpg" alt="Printing and Binding">
+                </figure>
+
+                <figure class="galleryItem" data-tag="printing">
+                        <img src="photos/products/printing -1.jpg" alt="Printing and Binding">
+                </figure>
+
+
+                <figure class="galleryItem" data-tag="stickerOnAcrylic">
+                        <img src="photos/products/sticker on acrylic -1.jpg" alt="Sticker on Acrylic">
+                </figure>
+
+                <figure class="galleryItem" data-tag="stickerOnAcrylic">
+                        <img src="photos/products/sticker on acrylic -2.jpg" alt="Sticker on Acrylic">
+                </figure>
+                
             </section>
         </main>
 
@@ -42,7 +166,7 @@
                 <a href="index.html" class="headerLogo">
                     <img src="photos/logoFullVer1.png" alt="Chromatix Digital Graphics Design and Printing">
                 </a>
-                <p class="footerAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="footerAbout">A shop based in Olongapo City, for all your printing needs! We offer many services perfect for events and everything your business requires.</p>
             </div>
 
             <div class="footerPages">
@@ -58,8 +182,8 @@
 
             <div class="footerContact">
                 <h4><a href="contact-us.html">CONTACT US</a></h4>
-                <p><a href="contact-us.html">+(63) 925 858 5622</a></p>
-                <p><a href="contact-us.html">chromatix08@gmail.com</a> </p>
+                <p><a href="tel:+639258585622">+(63) 925 858 5622</a></p>
+                <p><a href="mailto:chromatix08@gmail.com">chromatix08@gmail.com</a> </p>
                 <p><a href="https://www.facebook.com/ChromatixDigitalGraphic">facebook.com/ChromatixDigitalGraphic</a></p>
                 <p><a href="https://maps.app.goo.gl/qVREdaC6y2ZSpnni7">Lot 7 Block 6, Duhat St. Gordon Heights, Olongapo City, Zambales</a></p>
             </div>
@@ -70,4 +194,5 @@
 
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="js/gallery.js"></script>
 </html>

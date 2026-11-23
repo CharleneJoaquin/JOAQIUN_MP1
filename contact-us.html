@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <title>Login Page</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact-us.css">
     </head>
     
     <body>
@@ -30,7 +31,95 @@
 <!--START OF MAIN-->
 
         <main>
-            <section>
+            <section id="contactMain">
+                <div class="contactText">
+                    <h2 id="headline">Get in touch</h2>
+                    <p class="aboutUs">Don't hesitate to contact us for any questions you might have!</p>
+                </div>
+
+                <div class="contactBox">
+
+                    <!--sending an inquiry-->
+                    <!--temporary linked to personal formspree acc joaquincharleneanne@gmail.com instead of chromatix08@gmail.com for project purposes-->
+                    <form id="contactForm" action="https://formspree.io/f/mkjrpbvw" method="post">
+                        <h3>Inquiry form</h3>
+
+                        <div class="formInput">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" name="name" placeholder="Full Name" required>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="contactNumber">Phone Number</label>
+                            <input type="tel" id="contactNumber" name="phone" placeholder="+(63) 9XX XXX XXXX" required>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="product">Product</label>
+                            <select id="product" name="product">
+                                <option value="">Choose a product</option>
+                                <option>Deskplates and Nameplates</option>
+                                <option>PVC ID and ID Laces</option>
+                                <option>Printing and Binding</option>
+                                <option>Sticker on Acrylic</option>
+                                <option>Plaque</option>
+                                <option>Car Wrapping</option>
+                                <option>T-shirt Printing</option>
+                                <option>Calling Card</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="7" placeholder="Write your message here" required></textarea>
+                        </div>
+
+                        <button type="reset" id="resetButton">Clear</button>
+                        <button type="submit" id="submitButton">Send inquiry</button>
+                    </form>
+
+                    <div class="contactSide">
+
+                        <!--contact information-->
+                        <div class="contactInfo">
+                            <h3>Contact details</h3>
+
+                            <div>
+                                <span class="infoIcon"><i data-lucide="mail"></i></span>
+                                <span class="infoLabel">Email</span>
+                                <p><a href="mailto:chromatix08@gmail.com">chromatix08@gmail.com</a></p>
+                            </div>
+                            <div>
+                                <span class="infoIcon"><i data-lucide="phone"></i></span>
+                                <span class="infoLabel">Phone</span>
+                                <p><a href="tel:+639258585622">+(63) 925 858 5622</a></p>
+                            </div>
+                            <div>
+                                <span class="infoIcon"><i data-lucide="facebook"></i></span>
+                                <span class="infoLabel">Facebook</span>
+                                <p><a href="https://www.facebook.com/ChromatixDigitalGraphic">facebook.com/ChromatixDigitalGraphic</a></p>
+                            </div>
+                            <div>
+                                <span class="infoIcon"><i data-lucide="map-pin"></i></span>
+                                <span class="infoLabel">Address</span>
+                                <p><a href="https://maps.app.goo.gl/qVREdaC6y2ZSpnni7">Lot 7 Block 6, Duhat St. Gordon Heights, Olongapo City, Zambales</a></p>
+                            </div>
+                        </div>
+
+                        <!--google maps view-->
+                        <div class="contactMap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1928.151807872974!2d120.2912331!3d14.8642916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396711dec57efaf%3A0xdb596e7ff08c14c5!2sChromatix%20Digital%20Graphics%20Design%20and%20Printing-%20House%20of%20Acrylics!5e0!3m2!1sen!2sph!4v1795402039893!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </section>
         </main>
@@ -42,7 +131,7 @@
                 <a href="index.html" class="headerLogo">
                     <img src="photos/logoFullVer1.png" alt="Chromatix Digital Graphics Design and Printing">
                 </a>
-                <p class="footerAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="footerAbout">A shop based in Olongapo City, for all your printing needs! We offer many services perfect for events and everything your business requires.</p>
             </div>
 
             <div class="footerPages">
@@ -58,8 +147,8 @@
 
             <div class="footerContact">
                 <h4><a href="contact-us.html">CONTACT US</a></h4>
-                <p><a href="contact-us.html">+(63) 925 858 5622</a></p>
-                <p><a href="contact-us.html">chromatix08@gmail.com</a> </p>
+                <p><a href="tel:+639258585622">+(63) 925 858 5622</a></p>
+                <p><a href="mailto:chromatix08@gmail.com">chromatix08@gmail.com</a> </p>
                 <p><a href="https://www.facebook.com/ChromatixDigitalGraphic">facebook.com/ChromatixDigitalGraphic</a></p>
                 <p><a href="https://maps.app.goo.gl/qVREdaC6y2ZSpnni7">Lot 7 Block 6, Duhat St. Gordon Heights, Olongapo City, Zambales</a></p>
             </div>
@@ -70,4 +159,8 @@
 
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <!--for colored icons in the contact us box-->
+    <script src="https://unpkg.com/lucide@0.469.0"></script>
+    <script>lucide.createIcons();</script>
 </html>

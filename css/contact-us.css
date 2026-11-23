@@ -1,0 +1,205 @@
+#contactMain {
+    padding: 30px var(--side) 60px var(--side);
+}
+
+.contactText {
+    padding: 30px 0px 70px 0px;
+}
+
+.contactBox {
+    --gap: 30px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: var(--gap);
+    align-items: stretch;
+}
+
+/*----------------------------*/
+
+/*shared card design for inquiry form, contact info and google maps preview*/
+#contactForm,
+.contactInfo,
+.contactMap {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px 0px #00000014;
+}
+
+#contactForm,
+.contactInfo {
+    padding: 40px 36px 40px 36px;
+}
+
+#contactForm h3,
+.contactInfo h3 {
+    margin: 0px 0px 24px 0px;
+    font-size: 26px;
+    color: #000000;
+}
+
+.formInput {
+    margin-bottom: 20px;
+}
+
+.formInput label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.formInput input,
+.formInput select,
+.formInput textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 14px 12px 14px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #dfdfdf;
+    border-radius: 8px;
+}
+
+.formInput select:has(option[value=""]:checked) {
+    color: #9a9a9a;
+}
+
+.formInput select option {
+    color: #000000;
+}
+
+.formInput input::placeholder,
+.formInput textarea::placeholder {
+    color: #9a9a9a;
+    opacity: 1;
+}
+
+.formInput textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.formInput input:focus,
+.formInput select:focus,
+.formInput textarea:focus {
+    outline: none;
+    border-color: #0071bc;
+}
+
+#contactForm button {
+    padding: 0.65rem 1.25rem 0.65rem 1.25rem;
+    margin-right: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resetButton {
+    color: #0071bc;
+    background-color: #ffffff;
+    border: 2px solid #0071bc;
+}
+
+#resetButton:hover {
+    color: #61a9d8;
+    border-color: #61a9d8;
+}
+
+#submitButton {
+    color: #ffffff;
+    background-color: #0071bc;
+    border: 2px solid #0071bc;
+}
+
+#submitButton:hover {
+    background-color: #61a9d8;
+    border-color: #61a9d8;
+}
+
+/*----------------------------*/
+
+.contactSide {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.contactInfo {
+    background-color: #f5f5f5;
+}
+
+.contactInfo > div {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    column-gap: 16px;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.contactInfo > div:last-child {
+    margin-bottom: 0px;
+}
+
+.infoIcon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoIcon svg {
+    width: 28px;
+    height: 28px;
+}
+
+/*color of the icons in contact information box*/
+.contactInfo > div:nth-of-type(1) .infoIcon { color: #ba2226; }
+.contactInfo > div:nth-of-type(2) .infoIcon { color: #dc9627; }
+.contactInfo > div:nth-of-type(3) .infoIcon { color: #0071bc; }
+.contactInfo > div:nth-of-type(4) .infoIcon { color: #49896f; }
+
+.infoLabel {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+}
+
+.contactInfo p {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 2px 0px 0px 0px;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.contactInfo a:hover {
+    color: #0060af;
+    text-decoration: underline;
+}
+
+.contactMap {
+    position: relative;
+    flex: 1;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.contactMap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
